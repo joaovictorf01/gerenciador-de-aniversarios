@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aniversários</title>
+    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1,
+        h2 {
+            color: #333;
+        }
+
+        button {
+            margin-top: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Verificar Aniversários</h1>
+    <input type="file" id="fileInput" accept=".xlsx">
+    <button id="loadButton">Carregar Arquivo</button>
+
+    <h2>Aniversariantes de Hoje:</h2>
+    <ul id="todayBirthdays"></ul>
+
+    <h2>Aniversariantes do Mês:</h2>
+    <ul id="monthBirthdays"></ul>
+</body>
+
+</html>
